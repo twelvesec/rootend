@@ -86,7 +86,7 @@ usage examples:
 ### Capabilities:
  * General Capabilities
  * Custom Capabilities
- * With SET_UID
+ * With CAP_SETUID
 
 ### Interesting Files:
  * PHP Configuration Files
