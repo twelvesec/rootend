@@ -49,7 +49,7 @@ usage examples:
 
 ## Version
 
-Current verion: 1.5.8
+### 1.5.8
 
 ## Modes
 
