@@ -58,35 +58,35 @@ Current verion: 1.5.8
 
 ## Exploitation Categories
 
-* Suid Binaries:
-  * General Suids 
-  * Suids for reading files
-  * Suids for creating files as root
-  * Limited Suids
-  * Custom Suid Binaries
- 
- * Weak Permissions:
-  * /etc/passwd
-  * /etc/shadow
-  * /etc/sudoers
-  * apache2.conf
-  * httpd.conf
-  * redis.conf
-  * /root
- 
- * Weak Ownership/Groupship:
-  * /etc/passwd
-  * /etc/shadow
-  * /etc/sudoers
-  * apache2.conf
-  * httpd.conf
-  * redis.conf
-  * /root
- 
- * Capabilities:
-  * Generals
-  * Customs
-  * With SET_SUID
-  
- * Interesting Files:
-  * Php config files
+### Suid Binaries:
+ * General Suids
+ * Suids for reading files
+ * Suids for creating file as root
+ * Limited Suids
+ * Custom Suids
+
+### Weak Permissions:
+ * /etc/passwd
+ * /etc/shadow
+ * /etc/sudoers
+ * apache2.conf
+ * httpd.conf
+ * redis.conf
+ * /root
+
+### Weak Ownership:
+ * /etc/passwd
+ * /etc/shadow
+ * /etc/sudoers
+ * apache2.conf
+ * httpd.conf
+ * redis.conf
+ * /root
+
+### Capabilities:
+ * General Capabilities
+ * Custom Capabilities
+ * With SET_UID
+
+### Interesting Files:
+ * PHP Configuration Files
