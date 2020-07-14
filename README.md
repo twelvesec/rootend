@@ -47,46 +47,46 @@ usage examples:
 
 ```
 
-##Version
+## Version
 
 Current verion: 1.5.8
 
-##Modes
+## Modes
 
-*Manual
-*Auto
+* Manual
+* Auto
 
-##Exploitation Categories
+## Exploitation Categories
 
-*Suid Binaries:
-  *General Suids 
-  *Suids for reading files
-  *Suids for creating files as root
-  *Limited Suids
-  *Custom Suid Binaries
+* Suid Binaries:
+  * General Suids 
+  * Suids for reading files
+  * Suids for creating files as root
+  * Limited Suids
+  * Custom Suid Binaries
  
- *Weak Permissions:
-  */etc/passwd
-  */etc/shadow
-  */etc/sudoers
-  *apache2.conf
-  *httpd.conf
-  *redis.conf
-  */root
+ * Weak Permissions:
+  * /etc/passwd
+  * /etc/shadow
+  * /etc/sudoers
+  * apache2.conf
+  * httpd.conf
+  * redis.conf
+  * /root
  
- *Weak Ownership/Groupship:
-  */etc/passwd
-  */etc/shadow
-  */etc/sudoers
-  *apache2.conf
-  *httpd.conf
-  *redis.conf
-  */root
+ * Weak Ownership/Groupship:
+  * /etc/passwd
+  * /etc/shadow
+  * /etc/sudoers
+  * apache2.conf
+  * httpd.conf
+  * redis.conf
+  * /root
  
- *Capabilities:
-  *General
-  *Custom
-  *With SET_SUID
+ * Capabilities:
+  * Generals
+  * Customs
+  * With SET_SUID
   
- *Interesting Files:
-  *Php config files
+ * Interesting Files:
+  * Php config files
