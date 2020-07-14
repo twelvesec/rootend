@@ -1325,7 +1325,7 @@ def apache_check(user_var):
                 filename = path.join(dirpath, filename)
                 #print(filename)
                 #print(dirpath)
-                apache2_check2(filename, user_var)
+                apache_check2(filename, user_var)
 
                 #call function named owner_apache_check
                 owner_apache_check(filename, user_var)
@@ -1373,17 +1373,17 @@ def owner_redis_check(filename, me):
     if result[0] == me:
         if result[2] >= '400':
             #call function named banner_msg2
-            banner_mag2(filename)
+            banner_msg2(filename)
         elif result[2] >= '200' and result[2] < '400':
             #call function named banner_msg2
-            banner_mag2(filename)
+            banner_msg2(filename)
     elif result[1] == me:
         if result[3] >= '40':
             #call function named banner_msg3
-            banner_mag3(filename)
+            banner_msg3(filename)
         elif result[3] >= '20' and result[3] < '40':
             #call function named banner_msg3
-            banner_mag3(filename)
+            banner_msg3(filename)
 
 
 #redis_check function
