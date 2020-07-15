@@ -1311,7 +1311,7 @@ def apache_check(user_var):
 
     for dirpath, dirnames, filenames in walk(start):
         for filename in filenames:
-            if filename == "apache2.conf": #Ubuntu/Debian
+            if filename == "apache2.conf" or filename == "httpd.conf": #Ubuntu/Debian or #Redhat
                 filename = path.join(dirpath, filename)
                 #print(filename)
                 #print(dirpath)
@@ -1321,14 +1321,14 @@ def apache_check(user_var):
                 #call function named owner_apache_check
                 owner_apache_check(filename, user_var)
 
-            elif filename == "httpd.conf": #Redhat
-                filename = path.join(dirpath, filename)
+            #elif filename == "httpd.conf": #Redhat
+            #    filename = path.join(dirpath, filename)
                 #print(filename)
                 #print(dirpath)
-                apache_check2(filename, user_var)
+            #    apache_check2(filename, user_var)
 
                 #call function named owner_apache_check
-                owner_apache_check(filename, user_var)
+            #    owner_apache_check(filename, user_var)
                 
 
 #db_files_check function
