@@ -1,6 +1,6 @@
 # rootend
 
-rootend is a python 3.x *nix Enumerator & Auto Privilege Escalation tool.
+rootend is a python *nix Enumerator & Auto Privilege Escalation tool.
 
 *For a full list of our tools, please visit our website <https://www.twelvesec.com/>*
 
@@ -21,7 +21,7 @@ ___________              .__                _________
   |    |   \     /\  ___/|  |_\   /\  ___/ /        \  ___/\  \___ 
   |____|    \/\_/  \___  >____/\_/  \___  >_______  /\___  >\___  >
                        \/               \/        \/     \/     \/ 
-rootend v.1.5.8 - Enumeration & Automation Privilege Escalation tool.
+rootend v.2.0.2 - Enumeration & Automation Privilege Escalation tool.
 rootend is an open source tool licensed under GPLv3.
 Affected systems: *nix.
 Written by: @nickvourd of @twelvesec.
@@ -29,27 +29,49 @@ Special thanks to @maldevel & servo.
 https://www.twelvesec.com/
 Please visit https://github.com/twelvesec/rootend for more..
 
-
-usage: rootend.py [-h] [-v] [-a] [-m]
-
 optional arguments:
-  -h, --help     show this help message and exit
-  -v, --version  show version and exit
-  -a, --auto     automated privilege escalation process.
-  -m, --manual   system enumeration.
+  -h, --help            show this help message and exit
+  -v, --version         show version and exit
+  -a, --auto            automated privilege escalation process
+  -m, --manual          system enumeration
+  -n, --nocolor         disable color
+  -b, --banner          show banner and exit
+  -s, --suid            suid binary enumeration
+  -w, --weak            weak permissions of files enumeration
+  -p, --php             PHP configuration files enumeration
+  -c, --capabilities    capabilities enumeration
+  -f, --full-writables  world writable files enumeration
 
 usage examples:
-  ./root_end.py -a
-  ./root_end.py -m
-  ./root_end.py -v
+  ./rootend.py -a
+  ./rootend.py -m
+  ./rootend.py -v
+  ./rootend.py -b
 
-  *Use only one argument!
+Specific categories usage examples:
+  ./rootend.py -a -s
+  ./rootend.py -m -w
+  ./rootend.py -a -s -p
+  ./rootend.py -m -w -c -p
+  ./rootend.py -a -s -c -p -f
+
+  *Use the above arguments with -n to disable color.
 
 ```
 
 ## Version
 
-### 1.5.8
+### 2.0.2
+
+## Supports
+
+* Python 2.x
+* Python 3.x
+
+## Tested on
+
+* Python 2.7.18rc1
+* Python 3.8.2
 
 ## Modes
 
@@ -68,7 +90,6 @@ usage examples:
 ### Weak Permissions:
  * /etc/passwd
  * /etc/shadow
- * /etc/sudoers
  * apache2.conf
  * httpd.conf
  * redis.conf
@@ -77,7 +98,6 @@ usage examples:
 ### Weak Ownership:
  * /etc/passwd
  * /etc/shadow
- * /etc/sudoers
  * apache2.conf
  * httpd.conf
  * redis.conf
@@ -90,3 +110,4 @@ usage examples:
 
 ### Interesting Files:
  * PHP Configuration Files
+ * World Writable Files
