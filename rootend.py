@@ -40,7 +40,7 @@ import grp
 
 #variables area
 __author__ = "@nickvourd"
-__version__ = "2.0.2"
+__version__ = "2.0.3"
 __license__ = "GPLv3"
 __team__ = "@twelvesec"
 __systems__ = "*nix"
@@ -1390,7 +1390,7 @@ def show_redis_creds(filename, redis_array, bold, warning, endc):
 def read_redis(filename1, bold, warning, endc):
     keywords = [ 'requirepass' ]
 
-    fopen = open(filename1, mode='r+') 
+    fopen = open(filename1, mode='r') 
     fread = fopen.readlines()
     
     for liner in fread: 
@@ -1499,7 +1499,7 @@ def read_db_creds(keyword1, keyword2, keyword3, keyword4, filename, bold, green,
     #set an array
     keyword = [ keyword1, keyword2, keyword3, keyword4 ]
 
-    fopen = open(filename, mode='r+') 
+    fopen = open(filename, mode='r') 
     fread = fopen.readlines()
 
     for line in fread: 
