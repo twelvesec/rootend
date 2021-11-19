@@ -21,7 +21,7 @@ ___________              .__                _________
   |    |   \     /\  ___/|  |_\   /\  ___/ /        \  ___/\  \___ 
   |____|    \/\_/  \___  >____/\_/  \___  >_______  /\___  >\___  >
                        \/               \/        \/     \/     \/ 
-rootend v.2.0.2 - Enumeration & Automation Privilege Escalation tool.
+rootend v.2.0.3 - Enumeration & Automation Privilege Escalation tool.
 rootend is an open source tool licensed under GPLv3.
 Affected systems: *nix.
 Written by: @nickvourd of @twelvesec.
@@ -61,7 +61,7 @@ Specific categories usage examples:
 
 ## Version
 
-### 2.0.2
+### 2.0.3
 
 ## Supports
 
